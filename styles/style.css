@@ -23,11 +23,24 @@
  }
 
  /*LOGO*/
- #header_logo {}
-
- .logo_size {
-     width: 215px;
-     height: 150px;
+ #header_logo {
+    padding: 0;
+    margin: 0;
+    
+ }
+ #logo_writing{
+     margin: 0;
+     padding: 0;
+     width: 200px;
+     height: 50px;
+     
+ }
+ #logo {
+     margin: 0;
+     padding: 0;
+     width: 200px;
+     height: 145px;
+     
  }
  @keyframes rotating {
      from {
@@ -38,7 +51,7 @@
          transform: rotate(360deg);
      }
  }
- #header_logo img:hover {
+ #header_logo #logo:hover {
     animation: rotating 2s linear infinite;
  }
  /*MENU*/
