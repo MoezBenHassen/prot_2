@@ -1,0 +1,50 @@
+ /*****************GENERAL STYLING*************************/
+ html,
+ body {
+     height: 100%;
+     margin: 0;
+     background-image: url("../ressources/images/bg.png");
+     /*font: 13px monospace;*/
+ }
+
+ .cntr,
+ #header_logo,
+ #header_menu,
+ #main_header_div {
+     border: solid red 2px;
+ }
+
+ p {
+     margin-top: 30px;
+ }
+
+ /*****************HEADER STYLING*************************/
+ #main_header_div {
+     display: flex;
+     justify-content: space-between;
+     margin-top: 10px;
+     padding: 5px;
+ }
+
+ /*LOGO*/
+ #header_logo {}
+
+ .logo_size {
+     width: 215px;
+     height: 150px;
+ }
+
+ /*MENU*/
+ #header_menu {
+     display: flex;
+ }
+
+ #header_menu ul {
+     list-style-type: none;
+     display: flex;
+     align-items: stretch;
+     justify-content: space-evenly;
+ }
+
+ /*SEARCH BAR IN ->> style_headerSearchBar.css*/
+ /*****************BODY STYLING*************************/
