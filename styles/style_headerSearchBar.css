@@ -12,12 +12,11 @@
     display: table-cell;
     text-align: center;
     vertical-align: middle;
-    color: red;
+    color: #FFFFFF;
 }
 
 /*** STYLES ***/
 .search {
-    
     display: inline-block;
     position: relative;
     height: 35px;
@@ -30,6 +29,7 @@
     -webkit-transition: all 200ms ease;
     transition: all 200ms ease;
     cursor: text;
+    color: #169a8c;
 }
 
 .search:after {
@@ -51,6 +51,7 @@
 .search:hover {
     width: 200px;
     margin-right: 0px;
+    padding-top: 0;
 }
 
 .search.active:after,

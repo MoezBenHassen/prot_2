@@ -8,32 +8,48 @@
     <link rel="stylesheet" href="https:/7/cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link rel="stylesheet" href="../styles/style_headerSearchBar.css">
     <link rel="stylesheet" href="../styles/style.css">
+        <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
     <style>
     </style>
 </head>
 <body>
-    
     <header>
         <div id="main_header_div">
+            <!-- HEADER LOGO -->
             <div id="header_logo">
                 <img src="../ressources/images/logo-animadop.png" alt="logo-animadop" class="logo_size">
             </div>
+            <!-- HEADER MENU -->
             <div id="header_menu">
                 <ul>
-                    <li>Acceuil</li>
-                    <li>Contact</li>
-                    <li>Login</li>
+                    <li>
+                        <a class="header_menu_item" href="#">Acceuil</a>
+                    </li>
+                    <li>
+                        <a class="header_menu_item" href="#">Contact</a>
+                    </li>
+                    <li>
+                        <a class="header_menu_item" href="#">Login</a>
+                    </li>
                 </ul>
             </div>
-
-        <div class="cntr">
-            <div class="cntr-innr">
-            <label class="search" for="inpt_search">
-                    <input id="inpt_search" type="text" />
-            </label>
+        <!-- SEARCH BAR -->
+        <div id="header_search_div">
+            <div class="cntr">
+                <div class="cntr-innr">
+                <label class="search" for="inpt_search">
+                        <input id="inpt_search" type="text" />
+                </label>
+                </div>
             </div>
         </div>
-        <!-- partial -->
+        
+        <!-- SCRIPTS -->
         <script src='https://cdnjs.cloudflare.com/ajax/libs/zepto/1.0/zepto.min.js'></script>
         <script  src="../scripts/script_headerSearchBar.js"></script>
     </header>
