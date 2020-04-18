@@ -6,6 +6,12 @@
     <title>Home Animadop</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https:/7/cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+   
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    
+    
+
     <link rel="stylesheet" href="../styles/style_headerSearchBar.css">
     <link rel="stylesheet" href="../styles/style.css">
         <link
@@ -14,23 +20,31 @@
       integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="../styles/style_waves.css">
     <style>
+        body{
+              height: 100%;
+            margin: 0;
+            background-image: url("../ressources/images/bg.png");
+            background-size: cover;
+            overflow: hidden;
+        }
     </style>
-</head>
+ </head>
 <body>
+  
     <header>
         <!--HEADER-->
-        <div id="main_header_div">
+        <div id="main_header_div" data-aos="zoom-out" data-aos-delay="300">
 
             <!-- HEADER LOGO -->
-            <div id="header_logo">
-                
-                <img src="../ressources/images/logo-animadop.png" alt="logo-animadop" id="logo">
-                <img src="../ressources/images/ktiba.png"  alt="logo" id="logo_writing">
+            <div id="header_logo" >
+                <img src="../ressources/images/logo-animadop.png" alt="logo-animadop" id="logo" >
+                <img src="../ressources/images/ktiba.png"  alt="logo" id="logo_writing" >
             </div>
 
             <!-- HEADER MENU -->
-            <div id="header_menu">
+            <div id="header_menu" >
                 <ul>
                     <li>
                         <a class="header_menu_item" href="#">Acceuil</a>
@@ -54,11 +68,51 @@
                 </div>
             </div>
         </div>
+    </div>
+    </header>
+    
+    <section>
+        <div id="aside_menu" > 
+            <ul class="box-e">
+                <li >
+                    
+                    <a class="custom-underline" href="#">Adoption</a>
+                    
+                   
+                </li>
+                <li>
+                    <a class="custom-underline" href="#">Animaux perdus</a>
+                </li>
+                <li>
+                    <a class="custom-underline" href="#">Animaux errant</a>
+                </li>
+                <li>
+                    <a  class="custom-underline" href="#">Nos vétérinaires</a>
+                </li>
+                <li>
+                    <a class="custom-underline" href="#">Accouplement</a>
+                </li>
+                <li>
+                    <a class="custom-underline" href="#">Magasin</a>
+                </li>
+            </ul>
         </div>
+    <div class="ocean">
         
+  <div class="wave">
+
+    
+  </div>
+   
+  <div class="wave"></div>
+
+  
+
+</div>
+    </section>
         <!-- SCRIPTS -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src='https://cdnjs.cloudflare.com/ajax/libs/zepto/1.0/zepto.min.js'></script>
         <script  src="../scripts/script_headerSearchBar.js"></script>
-    </header>
 </body>
 </html>
