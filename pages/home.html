@@ -4,17 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Animadop</title>
+    <!--BOOTSTRAP CDN-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https:/7/cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-   
+
+    <!--SLICK JS CDN-->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../ressources/slickjs/slick/slick.css"/>
+    
+    <link rel="stylesheet" type="text/css" href="../ressources/slickjs/slick/slick-theme.css"/>
+
+    <!--AOS JS CDN-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    
+    <!--FONT AWSOME CDN-->
     <script src="https://kit.fontawesome.com/4af995e81b.js"></script>
+    <script src="https://kit.fontawesome.com/yourcode.js"></script>
 
+    <!--CUSTOM CSS -->
     <link rel="stylesheet" href="../styles/style_headerSearchBar.css">
     <link rel="stylesheet" href="../styles/style.css">
-   <script src="https://kit.fontawesome.com/yourcode.js"></script>
+   
     <link rel="stylesheet" href="../styles/style_waves.css">
     <style>
         body{
@@ -25,6 +37,32 @@
             overflow: hidden;
         }
     </style>
+
+  <script type="text/javascript">
+  window.onload = function () {
+    var chart = new CanvasJS.Chart("chartContainer",
+    {
+      title:{
+        text: "% Adoption"
+      },
+      data: [
+      {
+       type: "doughnut",
+       dataPoints: [
+       {  y: 53.37, indexLabel: "Android" },
+       {  y: 35.0, indexLabel: "Apple iOS" },
+       {  y: 7, indexLabel: "Blackberry" },
+       {  y: 2, indexLabel: "Windows Phone" },
+       {  y: 5, indexLabel: "Others" }
+       ]
+     }
+     ]
+   });
+
+    chart.render();
+  }
+  </script>
+  <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
  </head>
 <body>
   
@@ -42,7 +80,7 @@
             <div id="header_menu" >
                 <ul>
                     <li>
-                        <a class="header_menu_item" href="#">Acceuil</a>
+                        <a class="header_menu_item " href="#">Acceuil</a>
                     </li>
                     <li>
                         <a class="header_menu_item" href="#">Contact</a>
@@ -68,7 +106,7 @@
     
     <section>
         <section id="main_body">
-            <aside id="aside_left">
+            <aside id="aside_left" >
                 <div id="aside_menu" > 
                     <ul >
                         <li class="box-e" >
@@ -99,11 +137,30 @@
                 </div>
             </aside>
              
-            <div id="carrousel">
-                CHOSE CHOSE CHOSE
+            <div id="carrousel" class="single-item">
+                <div>
+                    <img src="../ressources/images/carrousel_wolf.jpg" alt="">
+                </div>
+                <div>
+                    <img src="../ressources/images/carrousel_zebra.jpg" alt="">
+                </div>
+                <div>
+                    <img src="../ressources/images/carrousel_lion.jpg" alt="">
+                </div>
+                
             </div>
             <aside id="aside_right" >
-
+                <div id="urgence">
+                    <a href="#">
+                        <img src="../ressources/images/veterinary.png" alt="">
+                        URGENCE
+                    </a>
+                </div>
+                <div id="stats">
+                    <!--IMPORTANT: THIS PART MAY BE REPLACED AT A LATER TIME WITH OTHER CHARTING METHODS LIKE CHARTIJS OR CHART.JS OR OTHER CANVAS METHOD-->
+                    <div id="chartContainer" style="height: 300px; width: 100%;">
+                    </div>
+                </div>
             </aside>
         </section>
        
@@ -113,7 +170,19 @@
         <div class="wave"></div>
         </div>
     </section>
+    
         <!-- SCRIPTS -->
+        <script type="text/javascript">
+            $(document).ready(function(){
+            $('.single-item').slick({
+                setting-name: setting-value
+            });
+            });
+        </script>
+
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="../ressources/slickjs/slick/slick.min.js"></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src='https://cdnjs.cloudflare.com/ajax/libs/zepto/1.0/zepto.min.js'></script>
         <script  src="../scripts/script_headerSearchBar.js"></script>
