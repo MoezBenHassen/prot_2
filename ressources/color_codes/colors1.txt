@@ -17,3 +17,13 @@
 
 #5d92b4 carrousel color
 <i class="far fa-handshake"></i>
+
+
+
+ <div class="footer">
+            <div class="ocean">    
+            <div class="wave">  
+            </div>
+            <div class="wave"></div>
+            </div>
+        </div>

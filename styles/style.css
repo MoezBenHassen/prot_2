@@ -5,6 +5,8 @@ body {
     margin: 0;
     background-image: url("../ressources/images/bg.png");
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     /*font: 13px monospace;*/
 }
 
@@ -122,7 +124,6 @@ body {
 #main_body{
     display: flex;
     justify-content: space-between;
-    border: red solid 2px;
 }
 /*ASIDE MENU*/
 #aside_menu {
@@ -321,6 +322,7 @@ canvas{
     border-radius: 40px;
 }
 
+/* GROW EFFECT FOR MENU >>>> NOT USED 
 .hvr-grow-shadow {
     display: inline-block;
     vertical-align: middle;
@@ -342,14 +344,16 @@ canvas{
     transform: scale(1.1);
 }
 
+*/
 
-#carrousel {
-    background-color: #5d92b4;
+#slideshow {
+    /*background-color: #5d92b4;*/
     width: 1200px;
     height: 600px;
     z-index: 10;
     border-radius: 40px;
     position: relative;
+    margin-left: 5px;
 
     display: flex;
     justify-content: center;
@@ -359,7 +363,63 @@ canvas{
     bottom: 500px;
 }
 
-#carrousel img{
-    width: 1200px;
-    height: 600px;
+#slideshow div {
+    width: 100%;
+}
+#slideshow img {
+    width: 100%;
+    height: 700px;
+    border-radius: 40px;   
+}
+
+.slick-dots li button::before{
+    font-size: 15px;
+}
+.slick-prev:before,
+.slick-next:before {
+    font-size: 30px;
+}
+
+#slideshow .slick-prev {
+    left: 10px;
+    z-index: 1;
+}
+
+#slideshow .slick-next {
+    right: 20px;
+    z-index: 1;
+}
+/* TO CHANGE THE SELECTED DOT IN THE SLIDESHOW
+.slick-dots li.slick-active button:before {
+    color: #ffffff
+}
+*/
+.footer{
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+}
+
+
+section, #section2{
+    border: solid red 1px;
+}
+
+#section2 {
+    margin-top: 250px;
+    margin-bottom: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    background-color: rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 20px;
+    height: 50px;
+    width: 1000px;
+    text-align: center;
 }
