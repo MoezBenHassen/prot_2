@@ -3,17 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Animadop</title>
+    <title>Acceuil Animadop</title>
     <!--BOOTSTRAP CDN-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https:/7/cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-
-    <script
-  src="https://code.jquery.com/jquery-3.5.0.min.js"
-  integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
-  crossorigin="anonymous"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    
+    <!--JQUERY CDN-->
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    
     <!--SLICK JS CDN-->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
@@ -31,6 +30,7 @@
     <link rel="stylesheet" href="../styles/style.css">
    
     <link rel="stylesheet" href="../styles/style_waves.css">
+    <link rel="stylesheet" href="../styles/css_acceuil.css">
     <style>
         body{
             height: 100%;
@@ -38,7 +38,7 @@
             background-image: url("../ressources/images/bg.png");
             background-size: cover;
             background-repeat: no-repeat;
-            overflow-x: hidden;
+            /*overflow-x: hidden;*/
         }
     </style>
 
@@ -75,19 +75,19 @@
         <div id="main_header_div" data-aos="zoom-out" data-aos-delay="300">
 
             <!-- HEADER LOGO -->
-            <div id="header_logo" >
+            <div id="header_logo" data-aos="fade-down-right" >
                 <img src="../ressources/images/logo-animadop.png" alt="logo-animadop" id="logo" >
                 <img src="../ressources/images/ktiba.png"  alt="logo" id="logo_writing" >
             </div>
 
             <!-- HEADER MENU -->
-            <div id="header_menu" >
+            <div id="header_menu" data-aos="fade-down">
                 <ul>
                     <li>
                         <a class="header_menu_item " href="#">Acceuil</a>
                     </li>
                     <li>
-                        <a class="header_menu_item" href="#">Contact</a>
+                        <a class="header_menu_item" href="#">A propos</a>
                     </li>
                     <li>
                         <a class="header_menu_item" href="#">Login</a>
@@ -96,7 +96,7 @@
             </div>
 
         <!-- SEARCH BAR -->
-        <div id="header_search_div">
+        <div id="header_search_div" data-aos="fade-down-left">
             <div class="cntr">
                 <div class="cntr-innr">
                 <label class="search" for="inpt_search">
@@ -110,7 +110,7 @@
     
     <section>
         <section id="main_body">
-            <aside id="aside_left" >
+            <aside id="aside_left" data-aos="fade-up-right">
                 <div id="aside_menu" > 
                     <ul >
                         <li class="box-e" >
@@ -141,7 +141,7 @@
                 </div>
             </aside>
              
-            <div id="slideshow" class="slick multiple-items ">
+            <div id="slideshow" class="slick multiple-items " data-aos="zoom-out">
                 <div>
                     <img src="../ressources/images/slideshow_dog.jpg" alt="wolf">
                 </div>
@@ -152,7 +152,7 @@
                     <img src="../ressources/images/slideshow_cat.jpg" alt="lion">
                 </div>
             </div>
-            <aside id="aside_right" >
+            <aside id="aside_right" data-aos="fade-left" >
                 <div id="urgence">
                     <a href="#">
                         <img src="../ressources/images/veterinary.png" alt="">
@@ -167,13 +167,43 @@
             </aside>
         </section>
         
-         <section id="section2">
-            <input type="text">
+         <section id="section2"  data-aos="fade-in">
+             <h3 >Abonnez-vous a notre Newsletter !</h3>
+            <form onsubmit="verifMail()" action="" method="get" >
+                <div id="input_div" >
+                    <input type="text" placeholder="Tapez votre e-mail @" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Tapez votre e-mail @'" >
+                    <button type="submit" id="submit_button"> <span>&rarr;</button>
+                </div>
+            </form>
          </section>
-       </div>
+        <section id="section3_donate">
+            <p>"On fait Toujours de notre mieux pour aider les animaux en détresse, <br>Si vous voulez faire partie de notre cause,<br> votre aide nous est precieuse,
+                 <br> faite don! ;) "</p>
+            <a id="donate_link"   href="#">Donate</a>
+         </section>
+         <div id="footer_seperator">
+         </div>
+         
+         <footer>
+             
+            </div>
+                <h5>Contact</h5>
+                <div id="footer_socials">
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                </div>
+                <div id="footer_contact">
+                    <p> <em>E-mail :</em>  <i>  animadop@gmail.com </i></p>  
+                    <p> <em>Tel : </em>  <i> +216 65 849 878</i></p>
+                </div>
+            </div>
+         </footer>
        
 </section>
+
         <script>
+            /*SLIDESHOW SCRIPT WTIH SLICK JS */
             $(document).ready(()=>{
                 $('.slick').slick({
                     autoplay: true,
@@ -184,8 +214,6 @@
                     dots: true,
                 });
             });
-
-            
         </script>
         <!-- SCRIPTS -->
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

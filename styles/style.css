@@ -237,90 +237,6 @@ body {
 }
 
 
-#aside_right {
-    
-    width: 300px;
-    height: 600px;
-    margin-right: 15px;
-   
-    /*border: green solid 2px;*/
-    z-index: 10;
-    border-radius: 40px;
-    position: relative;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    
-
-    top: 50px;
-    bottom: 500px;
-
-}
-#aside_right #urgence {
-    display: flex;
-    background-color: #FFFFFF;
-    justify-content: center;
-    align-items: center;
-    padding: 10px; 
-    border-radius: 40px;
-    width: 90%;
-    height: 50%;
-}
-
-@keyframes pulse_urgence {
-    0% {
-        transform: scale(0.95);
-        box-shadow: 0 0 0 0 red;
-        background: red;
-    }
-
-    70% {
-        transform: scale(1);
-        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
-        background: white;
-    }
-
-    100% {
-        transform: scale(0.95);
-        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-        background-color: white;
-    }
-}
-
-#aside_right #urgence:hover{
-        animation: pulse_urgence 1s infinite;
-}
-#aside_right #urgence a {
-    color: gray;
-    font-weight: bolder;
-    font-size: larger;
-    text-align: center;
-}
-#aside_right #urgence a:hover{
-    color: gray;
-    text-decoration: none;
-}
-#aside_right #urgence a img{
-    margin-left: 50px;
-    height: 70%;
-    width: 70%;
-    
-}
-#aside_right #stats{
-    background-color: white;
-    display: flex;
-    border-radius: 40px;
-    margin-top: 20px;
-    width: 90%;
-    height: 50%;
-    align-items: center;
-    justify-content: center;
-}
-canvas{
-    border-radius: 40px;
-}
 
 /* GROW EFFECT FOR MENU >>>> NOT USED 
 .hvr-grow-shadow {
@@ -346,80 +262,56 @@ canvas{
 
 */
 
-#slideshow {
-    /*background-color: #5d92b4;*/
-    width: 1200px;
-    height: 600px;
-    z-index: 10;
-    border-radius: 40px;
-    position: relative;
-    margin-left: 5px;
+/*****************FOOTER STYLING*************************/
+footer{
+    margin: 0;
+    padding-top: 10px;
+    background-color: #0f6b62;
+}
+#footer_seperator{
+  margin-top: 50px;
+  background-color: #0f6b62;
+  height: 3px;
+}
 
+footer div {
+    padding: 5px;
+   
     display: flex;
     justify-content: center;
     align-items: center;
-
-    top: 50px;
-    bottom: 500px;
 }
-
-#slideshow div {
-    width: 100%;
-}
-#slideshow img {
-    width: 100%;
-    height: 700px;
-    border-radius: 40px;   
-}
-
-.slick-dots li button::before{
-    font-size: 15px;
-}
-.slick-prev:before,
-.slick-next:before {
-    font-size: 30px;
-}
-
-#slideshow .slick-prev {
-    left: 10px;
-    z-index: 1;
-}
-
-#slideshow .slick-next {
-    right: 20px;
-    z-index: 1;
-}
-/* TO CHANGE THE SELECTED DOT IN THE SLIDESHOW
-.slick-dots li.slick-active button:before {
-    color: #ffffff
-}
-*/
-.footer{
-   position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-}
-
-
-section, #section2{
-    border: solid red 1px;
-}
-
-#section2 {
-    margin-top: 250px;
-    margin-bottom: 30px;
-
+#footer_socials {
     display: flex;
-    align-items: center;
-    justify-content: center;
-}
+    justify-content: space-evenly;
+    font-size: 20px;
 
-input {
-    background-color: rgba(0, 0, 0, 0.1);
-    border: none;
-    border-radius: 20px;
-    height: 50px;
-    width: 1000px;
+}
+.fa-instagram:hover{
+    color: #87d0c5;
+}
+.fa-facebook:hover{
+    color: #87d0c5;
+}
+.fa-twitter:hover {
+    color: #87d0c5;
+}
+footer h5 {
+    color: #CAD9F3;
+    display: block;
     text-align: center;
+}
+a:hover{
+    color: white;
+}
+a:active{
+    color: #ffffff;
+}
+a:visited{color: #ffffff;}
+#footer_contact{
+    margin-top: 5px;
+    color: #CAD9F3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
