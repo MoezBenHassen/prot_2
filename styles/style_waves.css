@@ -1,7 +1,7 @@
 body{
       height: 100%;
       margin: 0;
-      background-image: url("../ressources/images/bg.png");
+      background-image: url("../ressources/images/bg_pink.png");
       background-size: cover;
       /*font: 13px monospace;*/
 }

@@ -66,7 +66,8 @@ body {
     width: 1000px;
     justify-content: center;
     align-items: center;
-    background-color: #dbe2f2;
+    background-color: #b2b2b2;
+    /*#dbe2f2*/
     border-radius: 50px;
     font-weight: bold;
     font-size: large;
@@ -87,7 +88,8 @@ body {
     padding-right:50px;
     padding-top: 20px;
     padding-bottom: 20px;
-    color: #169a8c;
+    color: #d82b6d;
+    /*#169a8c*/
     border-radius: 50px;  
     text-decoration: none;
 }
@@ -119,15 +121,18 @@ body {
 /*SEARCH BAR IN ->> style_headerSearchBar.css*/
 #header_search_div{
     margin: 20px 20px 0 0 ;
+    position: relative;
+    top: 10px;
 }
 /*****************BODY STYLING*************************/
 #main_body{
     display: flex;
     justify-content: space-between;
+    margin-top: 50px;
 }
 /*ASIDE MENU*/
 #aside_menu {
-    background-color: #dbe2f2;
+    background-color: #b2b2b2;
     margin-left: 20px;
     margin-right: 0;
     border-radius: 40px;
@@ -189,7 +194,7 @@ body {
 }
 /*ASIDE MENU list link setup*/
 #aside_menu ul li a  {
-    color: #138a7e;
+    color: #d82b6d;/*#138a7e;*/
     font-size:20px ;
     font-weight: 600;
     text-decoration: none;

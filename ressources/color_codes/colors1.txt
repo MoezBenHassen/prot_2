@@ -16,14 +16,9 @@
 #616A99 icon color
 
 #5d92b4 carrousel color
-<i class="far fa-handshake"></i>
 
+/* NEW PALET */ 
 
-
- <div class="footer">
-            <div class="ocean">    
-            <div class="wave">  
-            </div>
-            <div class="wave"></div>
-            </div>
-        </div>
+#d82b6d
+#b02057 BACKGROUND COLOR / LOGO
+#b0204b
