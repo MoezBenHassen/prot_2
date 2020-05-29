@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="../styles/style_headerSearchBar.css">
     <link rel="stylesheet" href="../styles/style.css">
    
-    <link rel="stylesheet" href="../styles/style_waves.css">
+    <!--<link rel="stylesheet" href="../styles/style_waves.css">-->
     <link rel="stylesheet" href="../styles/css_acceuil.css">
     <style>
         body{
@@ -76,7 +76,7 @@
 
             <!-- HEADER LOGO -->
             <div id="header_logo" data-aos="fade-down-right" >
-                <img src="../ressources/images/logo-animadop.png" alt="logo-animadop" id="logo" >
+                <img src="../ressources/images/logo_pink.png" alt="logo-animadop" id="logo" >
                 <img src="../ressources/images/logoWriting_pink.png"  alt="logo" id="logo_writing" >
             </div>
 
@@ -111,32 +111,38 @@
     <section>
         <section id="main_body">
             <aside id="aside_left" data-aos="fade-up-right">
-                <div id="aside_menu" > 
-                    <ul >
+                <div id="aside_menu" class="topnav ">   
+                    <div class="menu-toggler">
+                        <div class="bar half start"></div>
+                        <div class="bar"></div>
+                        <div class="bar half end"></div>
+                    </div>
+                    <ul id="list" class="hiddenUl">
                         <li class="box-e" >
-                            <img id="aside_menu_adoption" class="aside_menu_img_icon" src="../ressources/images/icons/adoption.png" alt="Adoption icon">
+                            <img id="aside_menu_adoption" class="aside_menu_img_icon" src="../ressources/images/icons/adoption_pink.png" alt="Adoption icon">
                             <a class="custom-underline" href="#">Adoption</a>
                         </li>
                         <li class="box-e">
-                            <img id="aside_menu_lost" class="aside_menu_img_icon" src="../ressources/images/icons/paw_search.png" alt="lost animal icon">
+                            <img id="aside_menu_lost" class="aside_menu_img_icon" src="../ressources/images/icons/paw_search_pink.png" alt="lost animal icon">
                             <a class="custom-underline" href="#">Animaux perdus</a>
                         </li>
                         <li class="box-e">
-                            <img id="aside_menu_errant_animals" class="aside_menu_img_icon" src="../ressources/images/icons/paw_plus.png" alt="errant animals icon">
+                            <img id="aside_menu_errant_animals" class="aside_menu_img_icon" src="../ressources/images/icons/paw_plus_pink.png" alt="errant animals icon">
                             <a class="custom-underline" href="#">Animaux errant</a>
                         </li>
                         <li class="box-e"> 
-                            <img id="aside_menu_vet" class="aside_menu_img_icon" src="../ressources/images/icons/vet.png" alt="Vet icon">
+                            <img id="aside_menu_vet" class="aside_menu_img_icon" src="../ressources/images/icons/vet_pink.png" alt="Vet icon">
                             <a  class="custom-underline" href="#">Nos vétérinaires</a>
                         </li>
                         <li class="box-e">
-                            <img id="aside_menu_breeding" class="aside_menu_img_icon" src="../ressources/images/icons/heart_paw.png" alt="breeding icon">
+                            <img id="aside_menu_breeding" class="aside_menu_img_icon" src="../ressources/images/icons/heart_paw_pink.png" alt="breeding icon">
                             <a class="custom-underline" href="#">Accouplement</a>
                         </li>
                         <li class="box-e">
-                            <img id="aside_menu_shop" class="aside_menu_img_icon" src="../ressources/images/icons/shop.png" alt="shop icon">
+                            <img id="aside_menu_shop" class="aside_menu_img_icon" src="../ressources/images/icons/shop_pink.png" alt="shop icon">
                             <a class="custom-underline" href="#">Magasin</a>
                         </li>
+                        
                     </ul>
                 </div>
             </aside>
@@ -219,6 +225,7 @@
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src='https://cdnjs.cloudflare.com/ajax/libs/zepto/1.0/zepto.min.js'></script>
         <script  src="../scripts/script_headerSearchBar.js"></script>
+        <script src="../scripts/script_menu.js"></script>
         
 </body>
 </html>

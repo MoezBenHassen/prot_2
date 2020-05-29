@@ -3,7 +3,7 @@ html,
 body {
     height: 100%;
     margin: 0;
-    background-image: url("../ressources/images/bg.png");
+    background-image: url("../ressources/images/bg_pink.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -20,9 +20,10 @@ body {
 /*****************HEADER STYLING*************************/
 #main_header_div {
     display: flex;
-    justify-content: space-between;
-    margin-top: px;
+    justify-content: space-around;
+    /*margin-top: px;*/
     padding: 5px;
+    
 }
 
 /*LOGO*/
@@ -63,14 +64,16 @@ body {
     padding: 20px;
     margin: auto;
     height: min-content;
-    width: 1000px;
-    justify-content: center;
+    width: 70%;
+    justify-content: space-around;
     align-items: center;
     background-color: #b2b2b2;
     /*#dbe2f2*/
     border-radius: 50px;
     font-weight: bold;
     font-size: large;
+
+    
 }
 
 #header_menu ul {
@@ -78,12 +81,14 @@ body {
     display: flex;
     padding: 0;
     margin: 0;
-    width: 100%;
-    justify-content: space-around;
+    width: 70%;
+    justify-content: space-between;
     align-items: center;
+    
+    
 }
 #header_menu ul li a {
-    margin: 50px;
+    margin: 30px;
     padding-left:50px;
     padding-right:50px;
     padding-top: 20px;
@@ -271,12 +276,17 @@ body {
 footer{
     margin: 0;
     padding-top: 10px;
-    background-color: #b02057;/*#0f6b62;*/
+    background-color: #B0206F;
+    /*#0f6b62;*/
+    -webkit-box-shadow: 0px -18px 36px -23px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px -18px 36px -23px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px -18px 36px -23px rgba(0, 0, 0, 0.75);
 }
 #footer_seperator{
   margin-top: 50px;
-  background-color: #0f6b62;
+  background-color: #b02057;
   height: 3px;
+  
 }
 
 footer div {
@@ -285,6 +295,7 @@ footer div {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 #footer_socials {
     display: flex;
