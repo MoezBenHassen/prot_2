@@ -93,27 +93,31 @@ canvas {
     /*background-color: #5d92b4;*/
     width: 1200px;
     height: 600px;
-    /*z-index: 10;*/
+    z-index: 10;
     border-radius: 40px;
     position: relative;
     margin-left: 5px;
 
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: baseline;
 
     top: 50px;
     bottom: 500px;
+    
+    border: red solid 2px;
 }
 
 #slideshow div {
     width: 100%;
+
 }
 
 #slideshow img {
     width: 100%;
-    height: 700px;
+    height: 5%;
     border-radius: 40px;
+    border: solid green 3px;
 }
 
 .slick-dots li button::before {
@@ -127,12 +131,12 @@ canvas {
 
 #slideshow .slick-prev {
     left: 10px;
-   /* z-index: 1;*/
+   z-index: 1;
 }
 
 #slideshow .slick-next {
     right: 20px;
-    /*z-index: 1;*/
+    z-index: 1;
 }
 
 /* TO CHANGE THE SELECTED DOT IN THE SLIDESHOW
@@ -151,7 +155,7 @@ section,
 /********************NEWSLETTER SECTION****************************/
 /*SECTION CONTAINER #sectioN2*/
 #section2 {
-    margin-top: 250px;
+    margin-top: 265px;
     margin-bottom: 30px;
 
     display: flex;
@@ -187,6 +191,7 @@ section,
     text-align: center;
     color: #FFFFFF;
     font-weight: bold;
+    
 }
 ::placeholder {
     color: #FFFFFF;
@@ -235,7 +240,7 @@ section,
     align-items: center;
     justify-content: center;
     margin-top: 200px;
-
+    margin-bottom: 20px;
     text-align: center;
 }
 #section3_donate p {

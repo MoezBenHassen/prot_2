@@ -232,7 +232,7 @@ body {
     height: 2px;
     width: 0%;
     left: 0%;
-    background-color: #616A99;
+    background-color: #d82b6d;
     transition: 0.5s ease all .3s;
     line-height: 125px;
 }
@@ -271,7 +271,7 @@ body {
 footer{
     margin: 0;
     padding-top: 10px;
-    background-color: #0f6b62;
+    background-color: #b02057;/*#0f6b62;*/
 }
 #footer_seperator{
   margin-top: 50px;
