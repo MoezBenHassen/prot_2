@@ -1,0 +1,61 @@
+#bg_profile {
+
+
+        
+    justify-content: space-evenly;
+    
+    
+
+    
+    background-color: #b2b2b2;
+  
+    border-radius: 40px;
+    width: 1000vw
+    ;
+    height: 600px;
+    ;
+            
+    margin-left: 20px;
+    margin-right: 20px;
+    
+    
+
+
+    /*border: solid red 2px;*/
+    
+    
+    top: 50px; 
+    bottom: 500px;
+    z-index: 10;     
+
+
+
+
+   
+}
+
+
+.ph_profile{
+    opacity: 0.85;
+    border-radius: 8px;
+    width: 20%;
+    height: 40%;
+   margin: 30px;
+   float: left;
+    
+}
+
+.ph_profile:hover {
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+  .bio{
+    margin-top: 40px;
+    margin-left: 20px;
+    width: 70%;
+    font-size: 25px;
+  }
+  .bio:hover{
+      color: #d82b6d;
+      
+  }
